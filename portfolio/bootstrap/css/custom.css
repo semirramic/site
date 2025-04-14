@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+}
+
+header {
+  position: relative;
+font-size: 20px;
+letter-spacing: -0.06em;
+text-transform: uppercase;
+font-family: 'Neue Haas Grotesk Text Pro';
+color: #000;
+text-align: right;
+  position: sticky;
+}
+
+/* HEADER */ 
+
+.nav-item {
+  background-color: #989890;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 102px;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+
+
+.navbar {
+  --bs-navbar-padding-y: 27px;
+}
+
+/* HEADER */ 
+
+
+/* TITLE */ 
+
+.display-1 {
+  font-size: 96px;
+  font-family: NeueHaasGroteskDisp W02 Blk;
+  color: #989890;
+  --bs-display-padding-x: 50px;
+  --bs-display-padding-y: 240px;
+  padding: var(--bs-display-padding-y) var(--bs-display-padding-x);
+}
+
+/* TITLE */ 
+
+
+.container-xxl {
+  font-size: 1930px;
+  font-family: NeueHaasGroteskDisp W02 Blk;
+  color: #989890;
+  max-width: 1900px;
+}
+
+
+.btn-primary{
+
+background-color: black;
+
+  border-top: 25px solid #989890;
+  border-radius: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  font-size: 96px;
+  color: #989890;
+}
+
+.sticky-top{
+  position: sticky top;
+  top: 0;
+}
+
