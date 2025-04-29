@@ -2,17 +2,7 @@
 <svg id="LOGO2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.18 404.59">
   <defs>
     <style>
-      .cls-1 {
-        fill: #1d1d1b;
-      }
-
-      .cls-1, .cls-2 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #fff;
-      }
+  
     </style>
   </defs>
   <rect class="cls-1" width="404.18" height="404.18"/>

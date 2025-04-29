@@ -1,88 +1,180 @@
 body {
   background-color: black;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
 }
 
 header {
   position: relative;
-font-size: 20px;
-letter-spacing: -0.06em;
-text-transform: uppercase;
-font-family: 'Neue Haas Grotesk Text Pro';
-color: #000;
-text-align: right;
-  position: sticky;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  z-index: +20;
+
 }
 
-/* HEADER */ 
+/* HEADER */
 
 .nav-item {
   background-color: #989890;
+  z-index: +16;
 }
 
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  --bs-gutter-x: 102px;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x)* .5);
-  padding-left: calc(var(--bs-gutter-x)* .5);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.navbar>.container,
-.navbar>.container-fluid,
-.navbar>.container-lg,
-.navbar>.container-md,
-.navbar>.container-sm,
-.navbar>.container-xl,
-.navbar>.container-xxl {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: flex-start;
-  justify-content: space-between;
-}
+/* HEADER */
 
 
-
-
-.navbar {
-  --bs-navbar-padding-y: 27px;
-}
-
-/* HEADER */ 
-
-
-/* TITLE */ 
+/* TITLE */
 
 .display-1 {
   font-size: 96px;
   font-family: NeueHaasGroteskDisp W02 Blk;
   color: #989890;
-  --bs-display-padding-x: 50px;
-  --bs-display-padding-y: 240px;
-  padding: var(--bs-display-padding-y) var(--bs-display-padding-x);
+
+
 }
 
-/* TITLE */ 
+/* TITLE */
 
 
-.container-xxl {
-  font-size: 1930px;
-  font-family: NeueHaasGroteskDisp W02 Blk;
+
+
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: +21;
+}
+
+
+
+.SEM {
+  padding-bottom: 179px;
+  padding-top: 60px;
+  margin: 0px;
+  z-index: +999999;
+}
+
+.CARD {
+
+  height: 729px;
+  background-color: #989890;
+  margin-top: 52px;
+  margin-bottom: 52px;
+  z-index: 1;
+}
+
+.TXT1 {
+  width: 431px;
+  position: relative;
+  font-size: 4rem;
+  line-height: 94.3%;
+  text-transform: uppercase;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  color: #000;
+  text-align: left;
+  display: inline-block;
+  height: 13.938rem;
+  padding-left: 56px;
+  padding-top: 56px;
+  margin: 0px;
+
+
+}
+
+.TXT2 {
+  text-transform: uppercase;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  font-size: 4rem;
+  color: #000;
+  padding-top: 240px;
+  margin: 0px;
+
+  padding-right: 56px;
+  text-align: right;
+  z-index: +21;
+
+}
+
+.TXT3 {
+  text-transform: uppercase;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  font-size: 4rem;
+  color: #000;
+  margin: 0px;
+  text-align: right;
+
+  padding-right: 56px;
+  z-index: +21;
+}
+
+.SOCIALS {
+
+  padding-top: 56px;
+  padding-right: 56px;
+  z-index: +21;
+}
+
+
+
+.ABOUTME {
+  border-bottom: 25px solid #989890;
+
+
+}
+
+
+.SR {
+
+  width: 100%;
+  height: 100%;
+  background-color: #989890;
+}
+
+.logo-container {
+  margin-top: 0px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+}
+
+.fait-main-est {
+
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
   color: #989890;
-  max-width: 1900px;
+  text-align: left;
+  display: inline-block;
 }
 
 
-.btn-primary{
+.btn-primary {
+  border-top: 25px solid #989890;
+  border-radius: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  font-size: 96px;
+  color: #989890;
+  background-color: black;
+  --bs-btn-border-color: none;
 
-background-color: black;
+  z-index: 0;
+}
+
+.custom-padding {
+  padding-left: 126px;
+  padding-right: 126px;
+  z-index: 7;
+}
+
+.main1 {
 
   border-top: 25px solid #989890;
   border-radius: 0px;
@@ -91,10 +183,83 @@ background-color: black;
   font-family: 'NeueHaasGroteskDisp W02 Blk';
   font-size: 96px;
   color: #989890;
+  background-color: black;
+  --bs-btn-border-color: none;
+
+  z-index: 0;
 }
 
-.sticky-top{
-  position: sticky top;
-  top: 0;
+.videofm {
+
+  border: 13px solid #989890;
+
+
+
 }
 
+.FAITMAIN {
+
+  font-family: 'Neue Haas Grotesk Text Pro'
+}
+
+.fait-main-est {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+
+}
+
+.genimg {
+  border: 13px solid #989890;
+
+}
+
+.fait-main-app {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+
+
+}
+
+.LOGOFM{
+
+  border: 13px solid #989890;
+}
+
+.fait-main-une {
+  padding-top: 40px;
+padding-bottom: 40px;
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+
+
+}
+
+.fait-main-af{
+
+
+padding-top:40px ;
+padding-bottom: 35px;
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+
+}
