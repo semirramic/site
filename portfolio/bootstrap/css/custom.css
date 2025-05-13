@@ -1,3 +1,5 @@
+
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -17,9 +19,14 @@ header {
 
 /* HEADER */
 
-.nav-item {
+.MENU1 {
   background-color: #989890;
   z-index: +16;
+}
+
+.no-gutters-custom {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* HEADER */
@@ -37,11 +44,209 @@ header {
 
 /* TITLE */
 
+/* accordion */
+
+.folder {
+
+
+  border-bottom: 25px solid #989890;
+
+}
+
+.accordion-button {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ACWORK {
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ACABOUT {
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+.accordion-button:not(.collapsed) {
+  color: #989890 !important;
+  /* or your desired text color */
+  background-color: black !important;
+  /* or any background */
+  border-top: 25px solid #989890;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  font-size: 6rem;
+}
+
+.accordion-button.collapsed {
+  color: #989890 !important;
+  /* or your desired text color */
+  background-color: black !important;
+  /* or any background */
+
+  border-top: 25px solid #989890;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  font-size: 6rem;
+
+}
+
+#workAccordion .accordion-button,
+#workAccordion .accordion-body {
+  background-color: #000 !important;
+
+}
+
+#workAccordion .accordion-item {
+  background-color: black !important;
+  border: none;
+
+}
+
+.accordion-body {
+
+  padding: 0px;
+
+}
+
+#workAccordion .accordion-button,
+#workAccordion .accordion-body,
+#workAccordion .accordion-header,
+#workAccordion .accordion-item {
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif !important;
+  padding-left: 0px;
+}
+
+#workAccordion .accordion-button::after {
+  display: none !important;
+
+}
+
+.accordion-button:focus {
+
+  box-shadow: none;
+}
+
+.accordion-collapse {
+  transition: height 0.75s ease !important;
+  /* You can change 1s to however long you want */
+}
+
+/* accordion */
 
 
 
 
-.container-fluid {
+
+/* fait main */
+
+.videofm {
+
+  border: 13px solid #989890;
+
+}
+
+.genimg {
+  border: 13px solid #989890;
+
+}
+
+.LOGOFM {
+
+  border: 13px solid #989890;
+
+}
+
+.fmtext{
+
+  padding-top: 40px;
+  padding-bottom: 35px;
+  position: relative;
+  font-size: 2.25rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+}
+
+.fmtext1{
+
+  padding-top: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  font-size: 2.25rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+}
+
+/* fait main */
+
+/* nature morte */
+
+.nmtext {
+  padding-top: 40px;
+  padding-bottom: 35px;
+  position: relative;
+  font-size: 2.25rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+}
+
+.nmimage {
+
+  padding-bottom: 40px;
+}
+
+/* nature morte */
+
+/* givenchy */
+
+.gvtext {
+  padding-top: 40px;
+  padding-bottom: 35px;
+  position: relative;
+  font-size: 2.25rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+}
+
+/* givenchy */
+
+/* about me */
+
+.amtext {
+
+  padding-bottom: 35px;
+  position: relative;
+  font-size: 2.25rem;
+  font-family: 'Neue Haas Grotesk Text Pro';
+  color: #989890;
+  text-align: left;
+  display: inline-block;
+}
+
+/* about me */
+
+/* contact */
+
+p.responsive-text {
+  font-size: clamp(1rem, 5vw, 4rem);
+}
+
+div.responsive-logo {
+  size: clamp(1rem, 5vw, 4rem);
+}
+
+
+container-fluid {
   padding-left: 0px;
   padding-right: 0px;
   z-index: +21;
@@ -53,7 +258,7 @@ header {
   padding-bottom: 179px;
   padding-top: 60px;
   margin: 0px;
-  z-index: +999999;
+  z-index: +1;
 }
 
 .CARD {
@@ -88,10 +293,9 @@ header {
   font-family: 'NeueHaasGroteskDisp W02 Blk';
   font-size: 4rem;
   color: #000;
-  padding-top: 240px;
   margin: 0px;
-
   padding-right: 56px;
+  padding-left: 56px;
   text-align: right;
   z-index: +21;
 
@@ -104,8 +308,8 @@ header {
   color: #000;
   margin: 0px;
   text-align: right;
-
   padding-right: 56px;
+  padding-left: 56px;
   z-index: +21;
 }
 
@@ -113,13 +317,13 @@ header {
 
   padding-top: 56px;
   padding-right: 56px;
+  padding-left: 56px;
   z-index: +21;
 }
 
+/* contact */
 
-
-
-
+/* etc... */
 
 .SR {
 
@@ -136,19 +340,9 @@ header {
   justify-content: center;
   align-items: center;
   background-color: black;
+  z-index: -100;
 
 }
-
-.fait-main-est {
-
-  position: relative;
-  font-size: 2rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
-
 
 .btn-primary {
   border-top: 25px solid #989890;
@@ -185,126 +379,6 @@ header {
   z-index: 0;
 }
 
-.videofm {
-
-  border: 13px solid #989890;
-
-
-
-}
-
-.FAITMAIN {
-
-  font-family: 'Neue Haas Grotesk Text Pro'
-}
-
-.fait-main-est {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-
-}
-
-.genimg {
-  border: 13px solid #989890;
-
-}
-
-.fait-main-app {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-
-
-}
-
-.LOGOFM {
-
-  border: 13px solid #989890;
-}
-
-.fait-main-une {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-
-
-}
-
-.fait-main-af {
-
-
-  padding-top: 40px;
-  padding-bottom: 35px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-
-}
-
-.nmtext {
-  padding-top: 40px;
-  padding-bottom: 35px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
-
-.nmimage {
-
-  padding-bottom: 40px;
-}
-
-.gvtext {
-  padding-top: 40px;
-  padding-bottom: 35px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
-
-.amtext {
-
-  padding-bottom: 35px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
-
-.folder {
-
-
-  border-bottom: 25px solid #989890;
-
-}
-
 .videofm,
 .genimg,
 .LOGOFM {
@@ -312,80 +386,13 @@ header {
   object-fit: cover;
 }
 
-
-
-.accordion-button {
-  font-weight: bold;
-  text-transform: uppercase;
+header.sticky-top.custom-padding {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom, black 30%, rgba(0, 0, 0, 0) 80%);
 }
 
-.ACWORK{
+p{
 
-  padding-top:16px;
-  padding-bottom: 16px;
-}
-
-.ACABOUT{
-
-  padding-top:16px;
-  padding-bottom: 16px;
-}
-
-
-.accordion-button:not(.collapsed) {
-  color: #989890 !important; /* or your desired text color */
-  background-color: black!important; /* or any background */
-  border-top: 25px solid #989890;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  font-size: 6rem;
-}
-
-.accordion-button.collapsed{
-  color: #989890 !important; /* or your desired text color */
-  background-color: black!important; /* or any background */
- 
-  border-top: 25px solid #989890;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  font-size: 6rem;
-
-}
-
-#workAccordion .accordion-button,
-#workAccordion .accordion-body {
-  background-color: #000 !important;
-  
-}
-
-#workAccordion .accordion-item {
-  background-color: black !important;
-  border: none;
-  
-}
-
-.accordion-body{
-
-padding: 0px;
-  
-}
-
-#workAccordion .accordion-button,
-#workAccordion .accordion-body,
-#workAccordion .accordion-header,
-#workAccordion .accordion-item {
-  font-family: 'Neue Haas Grotesk Text Pro', sans-serif !important;
-  padding-left: 0px;
-}
-
-#workAccordion .accordion-button::after {
-  display: none !important;
- 
-}
-
-.accordion-button:focus {
-
-box-shadow: none; 
-}
-
-.accordion-collapse {
-  transition: height 0.75s ease !important; /* You can change 1s to however long you want */
+  margin-bottom: 0px;
 }
