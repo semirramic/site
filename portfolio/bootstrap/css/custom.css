@@ -1,5 +1,10 @@
 
 
+html {
+  scroll-behavior: smooth;
+
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -13,11 +18,14 @@ header {
   font-size: 20px;
   text-transform: uppercase;
   font-family: 'Neue Haas Grotesk Text Pro';
-  z-index: +20;
+  z-index: +22;
+  
 
 }
 
 /* HEADER */
+
+
 
 .MENU1 {
   background-color: #989890;
@@ -245,11 +253,15 @@ div.responsive-logo {
   size: clamp(1rem, 5vw, 4rem);
 }
 
+.contactcard{
+
+  z-index: -1;
+}
 
 container-fluid {
   padding-left: 0px;
   padding-right: 0px;
-  z-index: +21;
+  z-index: -21;
 }
 
 
@@ -258,7 +270,7 @@ container-fluid {
   padding-bottom: 179px;
   padding-top: 60px;
   margin: 0px;
-  z-index: +1;
+  z-index: -1;
 }
 
 .CARD {
@@ -267,7 +279,7 @@ container-fluid {
   background-color: #989890;
   margin-top: 52px;
   margin-bottom: 52px;
-  z-index: 1;
+  z-index: -21;
 }
 
 .TXT1 {
@@ -297,7 +309,7 @@ container-fluid {
   padding-right: 56px;
   padding-left: 56px;
   text-align: right;
-  z-index: +21;
+  z-index: -21;
 
 }
 
@@ -310,7 +322,7 @@ container-fluid {
   text-align: right;
   padding-right: 56px;
   padding-left: 56px;
-  z-index: +21;
+  z-index: -21;
 }
 
 .SOCIALS {
@@ -318,7 +330,7 @@ container-fluid {
   padding-top: 56px;
   padding-right: 56px;
   padding-left: 56px;
-  z-index: +21;
+  z-index: -21;
 }
 
 /* contact */
