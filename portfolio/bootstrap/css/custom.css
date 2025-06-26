@@ -311,9 +311,15 @@ p {
     font-size: 14px;
   }
 
+header{
+
+position: sticky;
+
+}
+
   .display-1 {
     font-size: 3.5rem;
-    background-color: red;
+  
   }
 
   .TXT1, .TXT2, .TXT3 {
@@ -348,5 +354,16 @@ p {
     
       }
 
+      .nav-link{
+
+padding: 8px;
+
+      }
+
+  .navbar{
+
+    flex-wrap: nowrap;
+
+  }
 
 }
