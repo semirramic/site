@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'Neue Haas Grotesk Display W02 Blk';
+  src: url('/portfolio/fonts/Neue\ Haas\ Grotesk\ Display\ W02\ Blk.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Neue Haas Grotesk Text W02 Regular';
+  src: url('/portfolio/fonts/Neue\ Haas\ Grotesk\ Text\ W02\ Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ↑FONT STYLES↑*/
 
 html {
   scroll-behavior: smooth;
-
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,21 +30,17 @@ body {
 
 header {
   position: relative;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: uppercase;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  z-index: +22;
-  
-
+  font-family: 'Neue Haas Grotesk Text W02 Regular', sans-serif;
+  z-index: 22;
 }
 
-/* HEADER */
-
-
+/* ↑whole document↑ */
 
 .MENU1 {
   background-color: #989890;
-  z-index: +16;
+  z-index: 16;
 }
 
 .no-gutters-custom {
@@ -37,28 +48,18 @@ header {
   padding-right: 0;
 }
 
-/* HEADER */
-
-
-/* TITLE */
+/* ↑HEADER↑ */
 
 .display-1 {
-  font-size: 96px;
-  font-family: NeueHaasGroteskDisp W02 Blk;
+  font-size: 6rem;
+  font-family:'Neue Haas Grotesk Display W02 Blk', sans-serif;
   color: #989890;
-
-
 }
 
-/* TITLE */
-
-/* accordion */
+/* ↑TITLE↑ */
 
 .folder {
-
-
-  border-bottom: 25px solid #989890;
-
+  border-bottom: 1.5625rem solid #989890;
 }
 
 .accordion-button {
@@ -66,184 +67,75 @@ header {
   text-transform: uppercase;
 }
 
-.ACWORK {
-
-  padding-top: 16px;
-  padding-bottom: 16px;
+.ACWORK, .ACABOUT {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.ACABOUT {
-
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-
-.accordion-button:not(.collapsed) {
-  color: #989890 !important;
-  /* or your desired text color */
-  background-color: black !important;
-  /* or any background */
-  border-top: 25px solid #989890;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  font-size: 6rem;
-}
-
+.accordion-button:not(.collapsed),
 .accordion-button.collapsed {
   color: #989890 !important;
-  /* or your desired text color */
   background-color: black !important;
-  /* or any background */
-
-  border-top: 25px solid #989890;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
+  border-top: 1.5625rem solid #989890;
+  font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif;
   font-size: 6rem;
-
-}
-
-#workAccordion .accordion-button,
-#workAccordion .accordion-body {
-  background-color: #000 !important;
-
-}
-
-#workAccordion .accordion-item {
-  background-color: black !important;
-  border: none;
-
-}
-
-.accordion-body {
-
-  padding: 0px;
-
 }
 
 #workAccordion .accordion-button,
 #workAccordion .accordion-body,
 #workAccordion .accordion-header,
 #workAccordion .accordion-item {
-  font-family: 'Neue Haas Grotesk Text Pro', sans-serif !important;
-  padding-left: 0px;
+  background-color: black !important;
+  border: none;
+  font-family: 'Neue Haas Grotesk Text W02 Regular', sans-serif !important;
+  padding-left: 0;
+}
+
+.accordion-body {
+  padding: 0;
 }
 
 #workAccordion .accordion-button::after {
   display: none !important;
-
 }
 
 .accordion-button:focus {
-
   box-shadow: none;
 }
 
 .accordion-collapse {
   transition: height 0.75s ease !important;
-  /* You can change 1s to however long you want */
 }
 
-/* accordion */
-
-
-
-
-
-/* fait main */
-
-.videofm {
-
-  border: 13px solid #989890;
-
+.accordion {
+  --bs-accordion-border-color: transparent;
 }
 
-.genimg {
-  border: 13px solid #989890;
+/* ↑accordion↑ */
 
+.videofm, .genimg, .LOGOFM {
+  border: 0.8125rem solid #989890;
+  object-fit: cover;
 }
 
-.LOGOFM {
-
-  border: 13px solid #989890;
-
-}
-
-.fmtext{
-
-  padding-top: 40px;
-  padding-bottom: 35px;
+.fmtext, .fmtext1, .nmtext, .gvtext, .amtext {
+  padding-top: 2.5rem;
+  padding-bottom: 2.1875rem;
   position: relative;
   font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
+  font-family: 'Neue Haas Grotesk Text W02 Regular', sans-serif;
   color: #989890;
   text-align: left;
   display: inline-block;
 }
 
-.fmtext1{
-
-  padding-top: 40px;
-  padding-bottom: 30px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
-
-/* fait main */
-
-/* nature morte */
-
-.nmtext {
-  padding-top: 40px;
-  padding-bottom: 35px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
+/* ↑fait main↑ */
 
 .nmimage {
-
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
-/* nature morte */
-
-/* givenchy */
-
-.gvtext {
-  padding-top: 40px;
-  padding-bottom: 35px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
-
-/* givenchy */
-
-/* about me */
-
-.amtext {
-
-  padding-bottom: 35px;
-  position: relative;
-  font-size: 2.25rem;
-  font-family: 'Neue Haas Grotesk Text Pro';
-  color: #989890;
-  text-align: left;
-  display: inline-block;
-}
-
-/* about me */
-
-/* contact */
+/* ↑nature morte↑ */
 
 p.responsive-text {
   font-size: clamp(1rem, 5vw, 4rem);
@@ -253,120 +145,74 @@ div.responsive-logo {
   size: clamp(1rem, 5vw, 4rem);
 }
 
-.contactcard{
-
+.contactcard {
   z-index: -1;
 }
 
 container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   z-index: -21;
 }
 
-
-
 .SEM {
-  padding-bottom: 179px;
-  padding-top: 60px;
-  margin: 0px;
+  padding-bottom: 11.1875rem;
+  padding-top: 3.75rem;
+  margin: 0;
   z-index: -1;
 }
 
 .CARD {
-
-  height: 729px;
+  height: 45.5625rem;
   background-color: #989890;
-  margin-top: 52px;
-  margin-bottom: 52px;
+  margin-top: 3.25rem;
+  margin-bottom: 3.25rem;
   z-index: -21;
+}
+
+.TXT1, .TXT2, .TXT3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif;
+  color: #000;
+  margin: 0;
 }
 
 .TXT1 {
-  width: 431px;
+  width: 26.9375rem;
   position: relative;
-  font-size: 4rem;
   line-height: 94.3%;
-  text-transform: uppercase;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  color: #000;
   text-align: left;
   display: inline-block;
   height: 13.938rem;
-  padding-left: 56px;
-  padding-top: 56px;
-  margin: 0px;
-
-
+  padding-left: 3.5rem;
+  padding-top: 3.5rem;
 }
 
-.TXT2 {
-  text-transform: uppercase;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  font-size: 4rem;
-  color: #000;
-  margin: 0px;
-  padding-right: 56px;
-  padding-left: 56px;
+.TXT2, .TXT3 {
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
   text-align: right;
-  z-index: -21;
-
-}
-
-.TXT3 {
-  text-transform: uppercase;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  font-size: 4rem;
-  color: #000;
-  margin: 0px;
-  text-align: right;
-  padding-right: 56px;
-  padding-left: 56px;
   z-index: -21;
 }
 
 .SOCIALS {
-
-  padding-top: 56px;
-  padding-right: 56px;
-  padding-left: 56px;
+  padding-top: 3.5rem;
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
   z-index: -21;
 }
 
-/* contact */
 
-/* etc... */
-
-@media (max-width: 767px) {
-  .logo-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: visible;
-    z-index: 999;
-  }
-
-  .logo-container img,
-  .logo-container svg {
-    width: 100vw;       /* adjust as needed */
-    height: auto;
-    max-width: none;
-    max-height: none;
-  }
-}
 
 .SR {
-
   width: 100vw;
   height: 100vh;
   background-color: #989890;
 }
 
 .logo-container {
-  margin-top: 0px;
+  margin-top: 0;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -374,58 +220,133 @@ container-fluid {
   align-items: center;
   background-color: black;
   z-index: -100;
-
 }
 
-.btn-primary {
-  border-top: 25px solid #989890;
-  border-radius: 0px;
+.btn-primary, .main1 {
+  border-top: 1.5625rem solid #989890;
+  border-radius: 0;
   text-align: left;
   text-transform: uppercase;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  font-size: 96px;
+  font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif;
+  font-size: 6rem;
   color: #989890;
   background-color: black;
   --bs-btn-border-color: none;
-
   z-index: 0;
 }
 
 .custom-padding {
-  padding-left: 126px;
-  padding-right: 126px;
+  padding-left: 7.875rem;
+  padding-right: 7.875rem;
   z-index: 7;
-}
-
-.main1 {
-
-  border-top: 25px solid #989890;
-  border-radius: 0px;
-  text-align: left;
-  text-transform: uppercase;
-  font-family: 'NeueHaasGroteskDisp W02 Blk';
-  font-size: 96px;
-  color: #989890;
-  background-color: black;
-  --bs-btn-border-color: none;
-
-  z-index: 0;
-}
-
-.videofm,
-.genimg,
-.LOGOFM {
-
-  object-fit: cover;
 }
 
 header.sticky-top.custom-padding {
   width: 100%;
-  height: 180px;
+  height: 11.25rem;
   background: linear-gradient(to bottom, black 30%, rgba(0, 0, 0, 0) 80%);
 }
 
-p{
+p {
+  margin-bottom: 0;
+}
 
-  margin-bottom: 0px;
+/* ↓responsive↓ */
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  
+  .worknav{
+
+    font-size: 1rem;
+    
+      }
+  
+  html {
+    font-size: 15px;
+  }
+
+  .display-1 {
+      background: yellow;
+  
+    font-size: 5rem;
+  }
+
+  .TXT1, .TXT2, .TXT3 {
+    font-size: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .CARD {
+    height: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .SOCIALS {
+    padding: 3rem;
+  }
+
+  .custom-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  header.sticky-top.custom-padding {
+    height: 9rem;
+  }
+
+  button{
+
+    font-size: 5rem !important;
+    
+      }
+  
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+
+  .display-1 {
+    font-size: 3.5rem;
+    background-color: red;
+  }
+
+  .TXT1, .TXT2, .TXT3 {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .CARD {
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 100vh;
+  }
+
+  .SOCIALS {
+    padding: 2rem;
+  }
+
+  .custom-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  header.sticky-top.custom-padding {
+    height: 6rem;
+  }
+
+  button{
+
+    font-size: 3.5rem !important;
+    
+      }
+
+
 }
