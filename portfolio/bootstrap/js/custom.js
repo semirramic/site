@@ -12,7 +12,7 @@ ScrollTrigger.matchMedia({
         end: "bottom bottom",
         scrub: true,
         pin: true,
-        markers: true, // remove in production
+     
       }
     });
 
@@ -44,7 +44,7 @@ ScrollTrigger.matchMedia({
         end: "bottom bottom",
         scrub: true,
         pin: true,
-        markers: true, // remove in production
+     
       }
     });
 
@@ -74,7 +74,7 @@ gsap.to("body", {
     start: "bottom top",
     end: () => "+=" + window.innerHeight,
     scrub: true,
-    markers: true,
+  
   }
 });
 

@@ -52,7 +52,7 @@ header {
 
 .display-1 {
   font-size: 6rem;
-  font-family:'Neue Haas Grotesk Display W02 Blk', sans-serif;
+  font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif;
   color: #989890;
 }
 
@@ -67,7 +67,8 @@ header {
   text-transform: uppercase;
 }
 
-.ACWORK, .ACABOUT {
+.ACWORK,
+.ACABOUT {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -113,12 +114,18 @@ header {
 
 /* ↑accordion↑ */
 
-.videofm, .genimg, .LOGOFM {
+.videofm,
+.genimg,
+.LOGOFM {
   border: 0.8125rem solid #989890;
   object-fit: cover;
 }
 
-.fmtext, .fmtext1, .nmtext, .gvtext, .amtext {
+.fmtext,
+.fmtext1,
+.nmtext,
+.gvtext,
+.amtext {
   padding-top: 2.5rem;
   padding-bottom: 2.1875rem;
   position: relative;
@@ -156,7 +163,7 @@ container-fluid {
 }
 
 .SEM {
-  padding-bottom: 11.1875rem;
+  padding-bottom: 7rem;
   padding-top: 3.75rem;
   margin: 0;
   z-index: -1;
@@ -170,7 +177,9 @@ container-fluid {
   z-index: -21;
 }
 
-.TXT1, .TXT2, .TXT3 {
+.TXT1,
+.TXT2,
+.TXT3 {
   font-size: 4rem;
   text-transform: uppercase;
   font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif;
@@ -189,7 +198,8 @@ container-fluid {
   padding-top: 3.5rem;
 }
 
-.TXT2, .TXT3 {
+.TXT2,
+.TXT3 {
   padding-right: 3.5rem;
   padding-left: 3.5rem;
   text-align: right;
@@ -222,7 +232,8 @@ container-fluid {
   z-index: -100;
 }
 
-.btn-primary, .main1 {
+.btn-primary,
+.main1 {
   border-top: 1.5625rem solid #989890;
   border-radius: 0;
   text-align: left;
@@ -256,24 +267,27 @@ p {
 
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  
-  .worknav{
+
+  .worknav {
 
     font-size: 1rem;
-    
-      }
-  
+
+  }
+
   html {
     font-size: 15px;
   }
 
   .display-1 {
-      background: yellow;
-  
+    background: yellow;
+    padding-bottom: 5rem;
+
     font-size: 5rem;
   }
 
-  .TXT1, .TXT2, .TXT3 {
+  .TXT1,
+  .TXT2,
+  .TXT3 {
     font-size: 3rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -298,12 +312,12 @@ p {
     height: 9rem;
   }
 
-  button{
+  button {
 
     font-size: 5rem !important;
-    
-      }
-  
+
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -311,18 +325,21 @@ p {
     font-size: 14px;
   }
 
-header{
+  header {
 
-position: sticky;
+    position: sticky;
 
-}
+  }
 
   .display-1 {
     font-size: 3.5rem;
-  
+    padding-bottom: 5rem;
+
   }
 
-  .TXT1, .TXT2, .TXT3 {
+  .TXT1,
+  .TXT2,
+  .TXT3 {
     font-size: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -348,22 +365,63 @@ position: sticky;
     height: 6rem;
   }
 
-  button{
+  button {
 
     font-size: 3.5rem !important;
-    
-      }
 
-      .nav-link{
+  }
 
-padding: 8px;
+  .nav-link {
 
-      }
+    padding: 8px;
 
-  .navbar{
+  }
 
+  .navbar {
+    position: sticky;
     flex-wrap: nowrap;
 
   }
 
+  .fmtext,
+  .fmtext1,
+  .nmtext,
+  .gvtext,
+  .amtext {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    font-size: 1.3rem;
+    font-family: 'Neue Haas Grotesk Text W02 Regular', sans-serif;
+    color: #989890;
+    text-align: left;
+    display: inline-block;
+    text-align: center;
+  }
+
+.fmimg2{
+
+flex-wrap: nowrap;
+width: 100%;
+height: auto;
+}
+
+.bugfm,.genimg{
+
+width: 20%;
+height: 20%;
+}
+
+.videofm{
+
+margin: 0rem !important;
+border-width: 0.5rem;
+}
+
+.img-fluid{
+border-width: 0.5rem;
+margin: 0rem !important;
+
+}
+  
 }
