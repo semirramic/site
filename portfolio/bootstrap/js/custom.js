@@ -20,9 +20,9 @@ ScrollTrigger.matchMedia({
       { scale: 1.5, origin: "50% 51%", opacity: 1 },
       { scale: 3, origin: "50% 52%", opacity: 1 },
       { scale: 5, origin: "50% 53%", opacity: 1 },
-      { scale: 7.5, origin: "50% 54%", opacity: 1 },
-      { scale: 11, origin: "50% 55%", opacity: 0 },
-      { scale: 20, origin: "50% 100%", opacity: 0 },
+      { scale: 7, origin: "50% 54%", opacity: 1 },
+      { scale: 7, origin: "50% 55%", opacity: 0 },
+      { scale: 7, origin: "50% 100%", opacity: 0 },
     ];
 
     desktopSteps.forEach(step => {
@@ -40,7 +40,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".logo-container",
         start: "top top",
-        endTrigger: ".CARD",
+        endTrigger: ".TXT3",
         end: "bottom bottom",
         scrub: true,
         pin: true,
@@ -57,7 +57,6 @@ ScrollTrigger.matchMedia({
     mobileSteps.forEach(step => {
       tl.to(".logo-container", {
         scale: step.scale,
-        transformOrigin: step.origin,
         opacity: step.opacity,
       });
     });
