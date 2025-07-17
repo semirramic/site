@@ -8,13 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="portfolio/bootstrap/css/custom.css">
-  <link rel="icon" type="image/png" href="/portfolio/IMGS/favicon.jpg">
+  <link rel="icon" type="image/png" href="portfolio/IMGS/favicon.jpg">
     <link rel="stylesheet" href="https://use.typekit.net/cwc0iox.css">
 
 </head>
 
 <body >
-    <div id="revealScroller" class="revealScrollers">
+    <div id="revealScroller" class="revealScrollers d-none">
       <div class=" animationsr">
         <div id="logo">
           <svg class="SR" width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,16 +38,14 @@
 
 <div id="content">
 
+
   <!-- HEADER (A) -->
-  <header class="custom-padding sticky-top ">
+  <header class="custom-padding sticky-top pt-4">
 
-    <nav class="navbar ">
+    <nav class="container-fluid">
 
-      <div class="container-fluid no-gutters-custom ">
-
-        <!-- LOGO (A) -->
-        <div class="logo-container2 d-flex justify-content-between align-items-center  ">
-        
+      <div class="d-flex justify-content-between align-items-start">
+        <div class="logo">
           <svg class=" LOGO1" width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g class="LOGO1">
               <path id="Vector" d="M58 0.550781H0V56H58V0.550781Z" fill="#989890" />
@@ -61,27 +59,22 @@
               </g>
             </g>
           </svg>
-        </a>
-          </div>
-          <div class="MENU1">
-            <ul class="navbar-nav d-flex flex-row  align gap-3">
-              <li class="nav-item ">
-                <a class="nav-link" aria-current="page" href="#aboutmenav">ABOUT</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#worknav">WORK</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#contactnav">CONTACT</a>
-              </li>
-            </ul>
-          </div>
         </div>
-
-        <!-- LOGO (Z) -->
-
-        <!-- MENU (A) -->
-  
+        <div class="" style="background: #989890;">
+          <ul class="navbar-nav d-flex flex-row align gap-3 m-0 p-0">
+            <li class="nav-item ">
+              <a class="nav-link " aria-current="page" href="#aboutmenav">ABOUT</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#worknav">WORK</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#contactnav">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
   </header>
 
@@ -120,7 +113,7 @@
             </h2>
             <div id="collapseFM" class="accordion-collapse collapse" aria-labelledby="headingFM">
               <div class="accordion-body">
-                <video src="portfolio/VIDS/FAITMAIN1_SMALL.mp4" alt="MontageFaitMain" class="w-100 videofm" autoplay muted ></video>
+                <video src="portfolio/VIDS/FAITMAIN1_SMALL.mp4" alt="MontageFaitMain" class="w-100 videofm" muted controls ></video>
                 <p class="fmtext1">"Fait Main" est mon premier grand projet d’apprentissage, réalisé au sein de la Télé
                   Vaudoise. Pour cette série, j’ai contacté dix artisans suisses, qui ont chacun partagé leur
                   savoir-faire à travers un épisode de trois minutes.</p>
@@ -129,7 +122,7 @@
                     <img src="portfolio/IMGS/GEN.png" class="img-fluid genimg w-100 h-100" alt="GeneriqueFaitMain">
                   </div>
                   <div class="col-md-6">
-                    <video class="videofm w-100 h-100 bugfm" src="portfolio/VIDS/BUG.mp4" alt="BugFaitMain" autoplay muted ></video>
+                    <video class="videofm w-100 h-100 bugfm" src="portfolio/VIDS/BUG.mp4" alt="BugFaitMain" muted controls></video>
                   </div>
                 </div>
                 <p class="fmtext">Ce projet a été entièrement conçu et réalisé par moi, de l'organisation des tournages
@@ -137,8 +130,7 @@
                 <img src="portfolio/IMGS/LOGO.png" class="img-fluid LOGOFM my-3 w-100 h-100" alt="LogoFaitMain">
                 <p class="fmtext">Une imitation de bois intégrant une empreinte ADN pour évoquer l’authenticité et
                   l’unicité du fait main dans le logo.</p>
-                <video src="portfolio/VIDS/GENERIQUE.mp4" alt="GeneriqueFaitMain" class="w-100 videofm my-3" autoplay muted
-                  ></video>
+                <video src="portfolio/VIDS/GENERIQUE.mp4" alt="GeneriqueFaitMain" class="w-100 videofm my-3" muted controls></video>
                 <p class="fmtext">Fait avec after effects, le générique contient plusieurs effets intéressants imitant
                   l’organique, avec des transitions et des apparitions et des sound effects.</p>
               </div>
@@ -180,7 +172,7 @@
             </h2>
             <div id="collapseGV" class="accordion-collapse collapse" aria-labelledby="headingGV">
               <div class="accordion-body">
-                <video src="portfolio/VIDS/GIVENCHY.mp4" class="w-100 videofm" autoplay muted ></video>
+                <video src="portfolio/VIDS/GIVENCHY.mp4" controls class="w-100 videofm" muted ></video>
                 <p class="gvtext">“Givenchy” étant une animation de logo pour la marque Givenchy démontrant mes
                   capacités sur after effects.</p>
               </div>
@@ -227,20 +219,23 @@
   
   <div class="card-container d-flex flex-column justify-content-between custom-padding">
     <div class="contactcard">
-      <div class="icons2 justify-content-end align-items-right align-top">
-        <div class=" icons">
-          <img src="portfolio/IMGS/LINK.jpg" alt="LinkedIn" title="LinkedIn">
-          <img src="portfolio/IMGS/IG.jpg" alt="Instagram">
+
+      <div class="row g-2">
+        <div class="col-sm-6">
+          <div class="title">INTERACTIVE<br>MEDIA<br>DESIGNER</div>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-end">
+          <div class="icons2 d-flex align-items-right align-top gap-2">
+              <img src="portfolio/IMGS/LINK.jpg" alt="LinkedIn" title="LinkedIn" class="social-icon">
+              <img src="portfolio/IMGS/IG.jpg" alt="Instagram" class="social-icon">
+          </div>
         </div>
       </div>
-    <div>
-      <div class="title">INTERACTIVE<br>MEDIA<br>DESIGNER</div>
-    </div>
 
-    <div class="contact text-right">
-      SEMIR.RAMIC61@<br>GMAIL.COM<br>
-      +41 76 823 00 32
-    </div>
+      <div class="contact text-end">
+        SEMIR.RAMIC61@<br>GMAIL.COM<br>
+        +41 76 823 00 32
+      </div>
   </div>
 </div>
 </div>
@@ -293,7 +288,7 @@
               if (self.progress >= 0.9) {
                 revealScroller.style.display = "none";
                 revealScroller.style.pointerEvents = "none";
-                document.body.style.overflow = "auto";
+                document.body.style.overflow = "visible";
               } else {
                 revealScroller.style.pointerEvents = "auto";
               }

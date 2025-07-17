@@ -23,7 +23,6 @@
 }
 
 .animationsr {
-
   background-color: black;
   justify-content: center;
   align-items: center;
@@ -211,7 +210,6 @@ header {
 
 .card-container {
 
-
   height: auto;
   margin: 0px;
   color: black;
@@ -220,7 +218,13 @@ header {
 
 .contactcard {
   background-color: #989890;
+  padding: 20px;;
+}
 
+.social-icon {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
 }
 
 .title {
@@ -230,13 +234,14 @@ header {
 
 .contact {
   font-size: 4rem;
+  margin-top: 20px;
 }
 
 .icons img {
   height: 60px;
   width: 60px;
   object-fit: contain;
-  margin-left: 10px;
+
 }
 
 
@@ -345,7 +350,6 @@ p {
   }
 
   .display-1 {
-    background: yellow;
     padding-bottom: 5rem;
     font-size: 5rem;
   }
@@ -392,14 +396,19 @@ p {
   }
 
   body {
-    overflow: hidden !important;
+    /*overflow: hidden !important;*/
   }
 
+.SEM{
+padding-bottom: 4rem !important;
+
+}
 
   .semir-bold {
     font-size: 3.5rem;
     font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
     color: #989890;
+   
   }
 
   .RAMIC {
@@ -521,58 +530,50 @@ p {
     height: auto;
     margin : 0px;
     color: black;
-    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
     padding-bottom:2rem !important;
   }
 
   .contactcard {
     background-color: #989890;
-
-    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
   }
 
   .title {
-    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
     font-size: 2rem;
     line-height: 1.2;
-    bottom: 7.6vh;
+
     display: flex;
     position: relative;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
   }
 
   .contact {
-    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
     font-size: 2rem;
     text-align: right;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
   }
 
-  .icons img {
-    height: 60px;
-    width: 60px;
-    object-fit: contain;
-    margin-left: 0px;
-    margin-right: 10px;
-    margin-top: 10px;
-
-
+  .social-icon {
+    height: 50px;
+    width: 50px;
   }
 
-  .icons2 {
-
-    display: flex;
-    position: relative;
-
-  }
 
 
 
   /* ↑contact card↑ */
 
 }
+
+/***********************************
+* HEADER
+***********************************/
+/*.header {
+  background: #f00;
+  color: #000;
+  padding: 20px 10px;
+}*/
+
+
+/***********************************
+* FOOTER
+***********************************/
+
+
