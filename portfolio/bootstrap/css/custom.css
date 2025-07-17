@@ -14,14 +14,48 @@
 
 /* ↑FONT STYLES↑*/
 
+.revealScrollers {
+
+  z-index: 50;
+  inset: 0px;
+  position: fixed;
+  overflow-y: scroll !important;
+}
+
+.animationsr {
+
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  top: 0px;
+  position: sticky;
+}
+
+.psr {
+
+  height: 100vh;
+  pointer-events: none;
+
+}
+
+/* ↑animation↑*/
+
+.lock-scroll {
+  overflow: hidden;
+  touch-action: none;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
+
 
 }
 
 body {
+
   background-color: black;
 
   margin: 0;
@@ -48,6 +82,12 @@ header {
   padding-right: 0;
 }
 
+.nav-link {
+
+  padding: 8px;
+
+}
+
 /* ↑HEADER↑ */
 
 
@@ -64,7 +104,6 @@ header {
 .RAMIC {
   font-size: 6rem;
   font-family: 'Neue Haas Grotesk Text W02 Regular', sans-serif !important;
-
   letter-spacing: -0.2rem;
   color: #989890;
 }
@@ -72,12 +111,22 @@ header {
 
 /* ↑TITLE↑ */
 
-.folder {
-  border-bottom: 1.5625rem solid #989890;
+
+#headingWork, #headingAbout{
+  border-top: 1rem solid #989890;
+
 }
+
+
+#headingFM, #headingNM, #headingGV{
+  border-top: 0.5rem solid #989890;
+}
+
 
 .accordion-button {
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6rem;
   text-transform: uppercase;
 }
 
@@ -85,15 +134,16 @@ header {
 .ACABOUT {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  
 }
 
 .accordion-button:not(.collapsed),
 .accordion-button.collapsed {
   color: #989890 !important;
   background-color: black !important;
-  border-top: 1.5625rem solid #989890;
-  font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif;
-  font-size: 6rem;
+  
+
+
 }
 
 #workAccordion .accordion-button,
@@ -120,6 +170,7 @@ header {
 
 .accordion-collapse {
   transition: height 0.75s ease !important;
+
 }
 
 .accordion {
@@ -158,17 +209,39 @@ header {
 
 /* ↑nature morte↑ */
 
-p.responsive-text {
-  font-size: clamp(1rem, 5vw, 4rem);
-}
+.card-container {
 
-div.responsive-logo {
-  size: clamp(1rem, 5vw, 4rem);
+
+  height: auto;
+  margin: 0px;
+  color: black;
+  font-family: 'NeueHaasGroteskDisp W02 Blk';
 }
 
 .contactcard {
-  z-index: -1;
+  background-color: #989890;
+
 }
+
+.title {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.contact {
+  font-size: 4rem;
+}
+
+.icons img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+
+
+/* ↑contact card↑ */
 
 .container-fluid {
   padding-left: 0;
@@ -181,14 +254,6 @@ div.responsive-logo {
   padding-top: 3.75rem;
   margin: 0;
   z-index: -1;
-}
-
-.CARD {
-  height: 45.5625rem;
-  background-color: #989890;
-  margin-top: 3.25rem;
-  margin-bottom: 3.25rem;
-  z-index: -21;
 }
 
 .TXT1,
@@ -220,32 +285,20 @@ div.responsive-logo {
   z-index: -21;
 }
 
-.SOCIALS {
-  padding-top: 3.5rem;
-  padding-right: 3.5rem;
-  padding-left: 3.5rem;
-  z-index: -21;
-}
-
-
-
 .SR {
-  width: 100vw;
-  height: 100vh;
   background-color: #989890;
+  width: 200px;
+  height: 200px;
 }
 
 .logo-container {
-  margin-top: 0;
-  height: 100vh;
-  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: black;
-  z-index: -100;
+  justify-content: center;
+  position: relative;
+  width: 100%;
   will-change: transform, opacity;
-
+  z-index: 100;
 }
 
 .btn-primary,
@@ -266,6 +319,7 @@ div.responsive-logo {
   padding-left: 7.875rem;
   padding-right: 7.875rem;
   z-index: 7;
+
 }
 
 header.sticky-top.custom-padding {
@@ -280,14 +334,10 @@ p {
 
 /* ↓responsive↓ */
 
-
-
 @media (min-width: 768px) and (max-width: 1200px) {
 
   .worknav {
-
     font-size: 1rem;
-
   }
 
   html {
@@ -297,7 +347,6 @@ p {
   .display-1 {
     background: yellow;
     padding-bottom: 5rem;
-
     font-size: 5rem;
   }
 
@@ -339,9 +388,12 @@ p {
 @media (max-width: 767px) {
   html {
     font-size: 14px;
-
+    overflow-x: hidden;
   }
 
+  body {
+    overflow: hidden !important;
+  }
 
 
   .semir-bold {
@@ -350,13 +402,9 @@ p {
     color: #989890;
   }
 
-
-
-
   .RAMIC {
     font-size: 3.5rem;
     font-family: 'Neue Haas Grotesk Text W02 Regular', sans-serif !important;
-
     letter-spacing: -0.2rem;
     color: #989890;
   }
@@ -369,11 +417,7 @@ p {
     padding-right: 1.5rem;
   }
 
-  .CARD {
-    height: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+
 
 
 
@@ -398,7 +442,7 @@ p {
 
   }
 
- 
+
 
   .fmtext,
   .fmtext1,
@@ -422,7 +466,7 @@ p {
   .genimg {
     justify-content: center;
     width: 5rem;
-    height: 5rem;
+ 
   }
 
 
@@ -437,16 +481,6 @@ p {
     margin: 0rem !important;
 
   }
-
-  .card {
-    height: auto;
-    background-color: #989890;
-    margin-top: 3.25rem;
-    margin-bottom: 3.25rem;
-    z-index: -21;
-  }
-
-
 
 
   .LOGO1 {
@@ -474,15 +508,69 @@ p {
 
   }
 
-  .TOP{
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Make sure it stays above other content */
-    background-color: black; /* Needed to cover content behind */
-    flex-wrap: nowrap;
+
+
+  #collapseNM {
+
+    border-bottom: 0.5rem solid #989890 !important;
+
+  }
+
+  .card-container {
+
+    height: auto;
+    margin : 0px;
+    color: black;
+    font-family: 'NeueHaasGroteskDisp W02 Blk';
+    padding-bottom:2rem !important;
+  }
+
+  .contactcard {
+    background-color: #989890;
+
+
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 1.2;
+    bottom: 7.6vh;
+    display: flex;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .contact {
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .icons img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+
+  }
+
+  .icons2 {
+
+    display: flex;
+    position: relative;
+
   }
 
 
 
+  /* ↑contact card↑ */
 
 }
