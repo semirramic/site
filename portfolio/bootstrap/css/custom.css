@@ -521,17 +521,18 @@ p {
     height: auto;
     margin : 0px;
     color: black;
-    font-family: 'NeueHaasGroteskDisp W02 Blk';
+    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
     padding-bottom:2rem !important;
   }
 
   .contactcard {
     background-color: #989890;
 
-
+    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
   }
 
   .title {
+    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
     font-size: 2rem;
     line-height: 1.2;
     bottom: 7.6vh;
@@ -543,6 +544,7 @@ p {
   }
 
   .contact {
+    font-family: 'Neue Haas Grotesk Display W02 Blk', sans-serif !important;
     font-size: 2rem;
     text-align: right;
     margin-right: 10px;
