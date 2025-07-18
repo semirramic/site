@@ -351,6 +351,8 @@ p {
   margin-bottom: 0;
 }
 
+.imgsem{padding-bottom: 2.1875rem;}
+
 /* ↓responsive↓ */
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -400,11 +402,7 @@ p {
     font-size: 5rem !important;
 
   }
-.genimg{
 
-height: 20%;
-
-}
 
 
 }
